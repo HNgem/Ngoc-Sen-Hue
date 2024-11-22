@@ -83,7 +83,8 @@ body {
 }
 
 .menu {
-    display: flex; /* Giữ các mục menu trên cùng một hàng */
+    display:grid; /* Giữ các mục menu trên cùng một hàng */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px; /* Khoảng cách giữa các mục */
 }
 
@@ -93,6 +94,7 @@ body {
     font-size: 15px;
     transition: color 0.3s ease;
     white-space: nowrap; /* Ngăn mục menu bị xuống dòng */
+    text-align: center;
 }
 
 .menu p:hover {
